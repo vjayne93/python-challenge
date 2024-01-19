@@ -13,8 +13,6 @@ output_file = 'output.txt'
 # Specify the full path where you want to save the file
 output_file_path = os.path.join(directory_path, output_file)
 
-#-----------
-
 # Find the total number of votes
 # First specify the column I am working in (C) and initialize the variable of votes
 
@@ -32,8 +30,6 @@ with open(csv_path, 'r') as file:
     for row in csv_reader:
         if len(row) > column_index:
              total_votes += 1
-
-#--------
 
 # Specify the candidate names we are searching for as search strings. We are searching in column C. The count starts at 0 for each string.
 search_strings = ['Charles Casper Stockham', 'Diana DeGette', 'Raymon Anthony Doane']
@@ -61,7 +57,6 @@ print("-----------------------------")
 print(f"Total Votes: {total_votes}")
 print("-----------------------------")
 
-# ----------------
 # Find the percentage of votes each candidate received by dividing every string count by the total votes variable. 
 
 for search_string, count in string_counts.items():
@@ -80,4 +75,3 @@ with open(output_file_path, 'w') as output_file:
     output_file.write(f'{search_string}: {percentage:.3f}% ({count})\n')
     output_file.write("-----------------------------\n")
     output_file.write(f'Winner: {winner}\n')
-
