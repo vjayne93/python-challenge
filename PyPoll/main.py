@@ -74,9 +74,10 @@ print(f'Winner: {winner}')
 
 with open(output_file_path, 'w') as output_file:
     # Write the string to the file
-    output_file.write("Election Results")
-    output_file.write(f"Total Votes: {total_votes}")
-    output_file.write("-----------------------------")
-    output_file.write(f'{search_string}: {percentage:.3f}% ({count})')
-    output_file.write("-----------------------------")
-    output_file.write(f'Winner: {winner}')
+    output_file.write("Election Results\n")
+    output_file.write(f"Total Votes: {total_votes}\n")
+    output_file.write("-----------------------------\n")
+    output_file.write(f'{search_string}: {percentage:.3f}% ({count})\n')
+    output_file.write("-----------------------------\n")
+    output_file.write(f'Winner: {winner}\n')
+
