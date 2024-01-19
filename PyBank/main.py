@@ -2,8 +2,8 @@ import csv
 import os
 import sys
 
-# Find the CSV I am working on in my computer directory and make it accessible to Python
-directory_path = r'C:\Users\vjmar\Desktop\DataScience\PythonHomework\03-Python\Starter_Code\PyBank\Resources'
+# Find the CSV I am working on in my directory and make it accessible to Python
+directory_path = r'python-challenge/PyBank/Resources'
 file_name = 'budget_data.csv'
 csv_path = os.path.join(directory_path, file_name)
 
