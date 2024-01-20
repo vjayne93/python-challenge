@@ -10,8 +10,10 @@ csv_path = os.path.join(directory_path, file_name)
 # Create a variable for the output file
 output_file = 'output.txt'
 
-# Specify the full path where you want to save the file
-output_file_path = os.path.join(directory_path, output_file)
+# Specify the full path where you want to save the file in the 'PyBank/analysis' directory
+output_file_path = os.path.join(directory_path, 'analysis', output_file)
+
+# Open the CSV file
 
 # Open the CSV file
 with open(csv_path, 'r') as file:
