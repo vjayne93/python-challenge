@@ -63,16 +63,16 @@ with open(output_file_path, 'w') as output_file:
     # Write the string to the file
     output_file.write("Financial Analysis\n")
     output_file.write(f"Total Months: {total_months}\n")
-    output_file.write(f"Net Total Profit/Loss: {net_total}\n")
-    output_file.write(f"Average Change: {average_change}\n")
-    output_file.write(f"Greatest Increase in Profits: {greatest_increase['date']} {greatest_increase['amount']}\n")
-    output_file.write(f"Greatest Decrease in Profits: {greatest_decrease['date']} {greatest_decrease['amount']}\n")
+    output_file.write(f"Net Total Profit/Loss: $ {net_total}\n")
+    output_file.write(f"Average Change: ${average_change:.2f}\n")
+    output_file.write(f"Greatest Increase in Profits: $ {greatest_increase['date']} $({greatest_increase['amount']})\n")
+    output_file.write(f"Greatest Decrease in Profits: $ {greatest_decrease['date']} $({greatest_decrease['amount']})\n")
 
 # Print the results to the console
 print("Financial Analysis")
 print(f"Total Months: {total_months}")
-print(f"Net Total Profit/Loss: {net_total}")
-print(f"Average Change: {average_change}")
-print(f"Greatest Increase in Profits: {greatest_increase['date']} {greatest_increase['amount']}")
-print(f"Greatest Decrease in Profits: {greatest_decrease['date']} {greatest_decrease['amount']}")
+print(f"Net Total Profit/Loss: ${net_total}")
+print(f"Average Change: ${average_change:.2f}")
+print(f"Greatest Increase in Profits: {greatest_increase['date']} ${greatest_increase['amount']})")
+print(f"Greatest Decrease in Profits: {greatest_decrease['date']} (${greatest_decrease['amount']})")
 
