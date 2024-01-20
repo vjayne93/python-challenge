@@ -10,8 +10,8 @@ csv_path = os.path.join(directory_path, file_name)
 # Create a variable for the output file
 output_file = 'output.txt'
 
-# Specify the full path where you want to save the file
-output_file_path = os.path.join(directory_path, output_file)
+# Specify the full path where you want to save the file in the 'PyBank/analysis' directory
+output_file_path = os.path.join(directory_path, 'analysis', output_file)
 
 # Find the total number of votes
 # First specify the column I am working in (C) and initialize the variable of votes
